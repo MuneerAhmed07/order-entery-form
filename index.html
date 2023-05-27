@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Custom CSS File link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1 class="h1-heading">ORDER ENTRY FORM</h1>
+    <!-- Main container -->
+    <div class="main_container">
+
+        <h2>Customer Information</h2>
+
+        <!-- Form section -->
+        <form action="" class="form">
+
+            <div class="input_container">
+                <!-- Name -->
+                <div class="input_box margin">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter your name" id="name" class="input" autocomplete="off">
+                </div>
+                <!-- Email -->
+                <div class="input_box">
+                    <label for="email">Email Address:</label>
+                    <input type="text" placeholder="Enter your email" id="email" class="input" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <!-- Phone number -->
+                <div class="input_box phone-number">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" placeholder="Phone" id="phone_number" class="input" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <!-- Shipping Address -->
+                <div class="input_box phone-number">
+                    <label for="shipping-address">Shipping Address:</label>
+                    <textarea name="" id="shipping-address" cols="30" rows="5" class="input"></textarea>
+                </div>
+            </div>
+
+            <!-- order details -->
+            <h2 class="order-details heading-margin">Order Details</h2>
+
+            <div class="input_container">
+                <!-- Product Name-->
+                <div class="input_box margin">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" placeholder="Product Name" id="product-name" class="input" autocomplete="off">
+                </div>
+                <!-- Quantity -->
+                <div class="input_box">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" placeholder="Quantity" id="quantity" class="input" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <!-- Product Name-->
+                <div class="input_box margin">
+                    <label for="delivery-date">Preferred Delivery Date:</label>
+                    <input type="date" id="delivery-date" class="input" autocomplete="off">
+                </div>
+                <!-- Quantity -->
+                <div class="input_box">
+                    <label for="shipping">Shipping Speed:</label>
+                    <select name="" id="shipping" class="input">
+                        <option value="">standard</option>
+                        <option value="">Express</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- PAYMENT INFORMATION -->
+            <h2 class="heading-margin">Payment Information</h2>
+
+            <div class="input_container">
+                <!-- Product Name-->
+                <div class="input_box margin">
+                    <label for="card-no">Credit Card Number:</label>
+                    <input type="number" placeholder="card number" id="card-no" class="input" autocomplete="off">
+                </div>
+                <!-- Quantity -->
+                <div class="input_box">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="date" id="expiry-date" class="input" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <!-- CVV -->
+                <div class="input_box phone-number">
+                    <label for="cvv">CVV:</label>
+                    <input type="number" placeholder="cvv" id="cvv" class="input" autocomplete="off">
+                </div>
+            </div>
+
+
+            <!-- ADDITIONAL COMMENTS -->
+            <h2 class="heading-margin">Additional Comments</h2>
+
+            <div class="input_container">
+                <!-- Shipping Address -->
+                <div class="input_box phone-number">
+                    <label for="add-comment">Comments or Special Instructions:</label>
+                    <textarea name="" id="add-comment" cols="30" rows="5" class="input"></textarea>
+                </div>
+            </div>
+
+          
+
+            <input type="button" value="submit" class="button">
+
+        </form>
+
+    </div>
+</body>
+
+</html>

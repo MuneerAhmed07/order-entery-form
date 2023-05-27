@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 40px 0;
+    background-color: #e6e3e3;
+    display: grid;
+    place-items: center;
+}
+
+.h1-heading {
+    margin-bottom: 20px;
+}
+
+/* CSS for main container */
+
+.main_container {
+    width: 600px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+    padding: 30px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 165, 0,.7);
+    top: 18px;
+    width: 170px;
+    height: 5px;
+    z-index: -1;
+}
+
+.heading-margin {
+    margin: 20px 0;
+}
+
+.order-details::before {
+    width: 100px;
+}
+
+/* CSS for Form section */
+
+.form {
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* CSS for Input_container */
+.input_container {
+    display: flex;
+    align-items: center;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+.margin {
+    margin-right: 40px;
+}
+
+/* CSS For Label */
+
+label {
+    font-size: .9rem;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+/* CSS for Whole Input Field */
+
+.input {
+    width: 100%;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 8px 10px;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 5px;
+}
+
+.phone-number {
+    width: 100%;
+}
+
+.input:focus {
+    outline: 1px solid #ccc;
+}
+
+/* CSS For button */
+
+.button {
+    width: 100%;
+    margin-top: 20px;
+    background: #0000ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 32px;
+    opacity: .9;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    opacity: .7;
+}
+
+/* copy Right  */
+
+p {
+    color: #222;
+    font-size: .9rem;
+    margin: 50px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 380px) {
+
+    .main_container {
+        width: 320px;
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .input_container {
+        flex-wrap: wrap;
+    }
+
+    .input_box {
+        width: 100%;
+    }
+
+    .margin {
+        margin-right: 0;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+}
